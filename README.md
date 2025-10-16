@@ -1,46 +1,36 @@
-
----
-
-## 💬 **chat-app / README.md**
-```markdown
 # 💬 Chat App
 
-A **Telegram-style real-time messaging app** built with **Next.js**, **Socket.IO**, and **MariaDB**.  
-Focused on reliability, authentication, and instant delivery — not bloated features.
+A **Telegram-style real-time messenger** built from scratch with **Next.js**, **Socket.IO**, and **MariaDB**.  
+Every event, connection, and packet is wired manually — no templates, no scaffolds.
 
 ---
 
 ## 🧠 Why It Exists
-I wanted to understand what happens between “Send” and “Received.”  
-This app is my dissection of real-time communication: sockets, state, and sync.
+I wanted to feel what “real-time” actually means at the socket level.  
+This app became a study in synchronization — how state, latency, and identity all collide in motion.
 
 ---
 
 ## ⚙️ Features
-- User authentication and registration  
-- Real-time messaging with Socket.IO  
-- Persistent chat rooms (MariaDB + Sequelize)  
-- Modern interface using Next.js App Router  
-- JWT authentication (secure sessions)  
-- Local file upload support for images  
-- Docker-ready environment for quick deployment  
+- Secure authentication and registration (JWT)
+- Persistent chat threads with live updates
+- Image upload pipeline (local storage)
+- Modular service layout for future scaling
+- Docker + Nginx deployment ready
 
 ---
 
 ## 🧩 Stack
 | Layer | Tech |
 |-------|------|
-| Front-End | Next.js (App Router) |
-| Backend | Node.js + Socket.IO |
+| Frontend | Next.js (App Router) |
+| Realtime | Socket.IO + WebSockets |
 | Database | MariaDB via Sequelize |
 | Auth | JWT |
 | Deployment | Docker + Nginx |
 
 ---
 
-## 🛠️ Setup
+## 🧰 Run It
 ```bash
-git clone https://github.com/donaldjsexton/chat-app.git
-cd chat-app
-npm install
-npm run dev
+git clone https://github.com/do
